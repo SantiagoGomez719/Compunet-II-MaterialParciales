@@ -35,6 +35,13 @@ public class Partial2Controller {
         this.matchRepo = matchRepo;
     }
 
+    // Dos FK hacia la misma tabla (homeCountry y awayCountry, o aeropuerto origen y destino), con sus dos colecciones inversas.
+    // Tabla intermedia, con llave compuesta o con id propio.
+    // Navegar relaciones con _ en los Query Methods, junto con Distinct, Top, OrderBy, Between, In e IsNull.
+    // Endpoints en un @RestController que llaman a los repositorios.
+    // La consulta de "máximo por grupo", que no se puede hacer solo con Query Methods. Ya sabes que conviene saltarla.
+    // La consulta de "máximo por grupo", que no se puede hacer solo con Query Methods. Ya sabes que conviene saltarla.
+
     // http://localhost:8081/springboot-api/partial2jap/q1?club=Real Madrid
     // Q1: GET /partial2jap/q1?club=Real Madrid
     @GetMapping("/q1")
